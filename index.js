@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 "use strict";
-require("dotenv").config();
+require("dotenv").config({ path: require("path").resolve(__dirname, ".env") });
 const { TwitterApi } = require("twitter-api-v2");
 
 function printHelp() {
